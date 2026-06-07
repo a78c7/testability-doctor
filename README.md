@@ -157,3 +157,10 @@ MIT License. See [LICENSE](LICENSE).
 - BountyLens: https://github.com/a78c7/bountylens
 - Testability Doctor: https://github.com/a78c7/testability-doctor
 - Toolkit: https://github.com/a78c7/ai-agent-safety-toolkit
+
+## Launch story
+
+This project is part of the AI Agent Safety Toolkit.
+
+Read the full launch story:
+https://github.com/a78c7/ai-agent-safety-toolkit/blob/main/launch/launch-blog-post.md
