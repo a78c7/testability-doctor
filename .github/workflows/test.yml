@@ -1,0 +1,27 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run unit tests
+        run: python3 -m unittest discover -s tests
+
+      - name: Run CLI smoke checks
+        run: |
+          python3 testability_doctor.py analyze --path examples/node-package-lock
+          python3 testability_doctor.py analyze --path examples/node-no-lockfile --format json || test "$?" -eq 1
+          python3 testability_doctor.py analyze --path examples/python-pytest --output examples/sample-report.md
+          python3 testability_doctor.py analyze --path examples/external-env || test "$?" -eq 2

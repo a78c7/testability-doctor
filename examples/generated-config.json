@@ -1,0 +1,12 @@
+{
+  "max_repo_size_mb": 500,
+  "max_files_scan": 5000,
+  "treat_swift_as_unsupported_in_docker": true,
+  "require_lockfile_for_node_code_tasks": true,
+  "allow_docs_only_without_tests": true,
+  "external_environment_keywords": [],
+  "custom_test_command_hints": [],
+  "fail_on_unknown_stack": false,
+  "large_repo_warning_mb": 100,
+  "monorepo_warning_package_count": 4
+}

@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+dist/
+build/
+*.log
+.DS_Store
+.coverage
+.pytest_cache/
+node_modules/
+*.secret
+*token*
+*credential*
+state.json
+cookies/
+keychain/
