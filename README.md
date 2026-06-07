@@ -151,3 +151,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Detector changes should include focused 
 ## License
 
 MIT License. See [LICENSE](LICENSE).
+
+## Part of AI Agent Safety Toolkit
+
+- BountyLens: https://github.com/a78c7/bountylens
+- Testability Doctor: https://github.com/a78c7/testability-doctor
+- Toolkit: https://github.com/a78c7/ai-agent-safety-toolkit
